@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Pedido</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <li> <a href="Home.html">Página inicial</a></li>
+            <li> <a href="promocoes.html">Página de promoções</a> </li>
+            <li> <a href="LocalizadorDeLojas.html">Conheça nossos espaços</a> </li>
+        </nav>
+        
+        <h1>Fala aqui o seu Pedido!</h1>
+            <h3>Preencha esse formulário abaixo para realizar o seu pedido</h3>
+
+            <form action="enviar_pedido.html" method="post">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <table>
+                        <tr>
+                            <td><label for="nome">Nome:</label></td>
+                            <td><input type="text" id="nome" name="nome" required placeholder="Digite seu nome"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">E-mail:</label></td>
+                            <td><input type="email" id="email" name="email" required placeholder="Digite seu email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="telefone">Telefone:</label></td>
+                            <td><input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" required></td>
+                        </tr>
+                    </fieldset>
+
+                    <table>
+                    <legend>Escolha seu sabor de Pizza</legend>
+                    <fieldset>
+                        <label for="pizza">Escolha de Pizza:</label>
+                        <select id="pizza" name="pizza" required>
+                            <option value="" disabled selected>Selecione uma pizza</option>
+                            <option value="marguerita">Marguerita</option>
+                            <option value="calabresa">Calabresa</option>
+                            <option value="portuguesa">Portuguesa</option>
+                            <option value="quatro_queijos">Quatro Queijos</option>
+                            <option value="frango_Catupiry">Frango/Catupiry</option>
+                            <option value="chocolate_com_morango">Chocolate com morango</option>
+                        </select>
+                        <p>adicionais Extras:</p>
+                        <label><input type="checkbox" name="adicionais" value="molho_de_tomate">Molho de Tomate </label>
+                        <label><input type="checkbox" name="adicionais" value="mussarela"> Mussarela</label>
+                        <label><input type="checkbox" name="adicionais" value="cebola"> Cebola</label>
+                        <label><input type="checkbox" name="adicionais" value="pimentao"> Pimentão</label>
+                        <p>Tamanho da Pizza:</p>
+                        <label><input type="radio" name="tamanho" value="pequena" required> Pequena</label>
+                        <label><input type="radio" name="tamanho" value="media"> Média</label>
+                        <label><input type="radio" name="tamanho" value="grande"> Grande</label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="observacoes">Observações Adicionais:</label>
+                            <br>
+                            <textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Escreva suas observações..."></textarea></fieldset>
+                        
+                        <fieldset> 
+                        <label for="pagamento">Método de Pagamento:</label>
+                            <select id="pagamento" name="pagamento" required>
+                            <option value="" disabled selected>Escolha o método de pagamento</option>
+                            <option value="dinheiro">Dinheiro</option>
+                            <option value="cartao_credito">Cartão de Crédito</option>
+                            <option value="cartao_debito">Cartão de Débito</option>
+                            <option value="pix">PIX</option>
+                        </select>
+                        <button type="submit">Enviar Pedido</button>
+                        </fieldset>
+                        
+                    </table>
+            </form>
+
+            
+
+    </section>
+
+    
+    
+</body>
+</html>
