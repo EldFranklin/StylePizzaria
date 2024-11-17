@@ -1,88 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="scroll-smooth" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet"/>
-    <title>Pizza Delicia</title>
+    <link href="./styles/output.css" rel="stylesheet"/>
+    <title>Pizzaria Delicia</title>
 </head>
-<body>
-    <header class="NavBar">
-        <h1>Bem Vindo a Pagina do Pizza Delicia</h1>
-        <nav>
-            <ul class="NavUL">
-                <li><a href="cardapio.html" target="_blank">Cardapio</a></li>
-                <li><a href="promocoes.html" target="_blank">Promoções</a></li>
-                <li><a href="facaOseuPedido.html" target="_blank">Pedidos</a></li>
-                <li><a href="LocalizadorDeLojas.html" target="_blank">Lojas</a></li>
-            </ul>
+<body class="font-Quicksand bg-zinc-900 text-orange-400">
+    <header>
+        <nav class="bg-zinc-900 flex items-center justify-between px-7 py-2.5">
+          <h1 class=" font-bold text-orange-500 text-3xl">Delicia</h1>
+          <ul class="list-none flex gap-7">
+                <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a href="cardapio.html" target="_blank">Cardapio</a></li>
+                <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a href="promocoes.html" target="_blank">Promoções</a></li>
+                <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a href="facaOseuPedido.html" target="_blank">Pedidos</a></li>
+                <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a href="LocalizadorDeLojas.html" target="_blank">Lojas</a></li>
+          </ul>
         </nav>
       </header>
-        <main>
-            <h2>Nossas Pizzas Destaques!</h2>
-            <p>Check out our specials for today!</p>
-            <ul>
-                <li>
-                  <h3>Pizza Frango com Catupiry</h3>
-                  <img src="https://th.bing.com/th/id/OIP.5vQDFu2Wz6kdeiI-6a7IxwHaD3?rs=1&pid=ImgDetMain" alt="Pizza Frango com Catupiry" width="230" height="150">
-                  <p>Deliciosa combinação de frango desfiado com o cremoso Catupiry, perfeita para quem ama sabores suaves e irresistíveis!</p>
-                  <a href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+      <section class="flex flex-row items-center h-screen">
+        <div class="flex flex-col justify-center gap-20 p-6">
+          <h2 class="text-5xl font-bold text-orange-500">Pizza Delicia</h2>
+          <p class=" w-60 font-semibold text-xl">Aqui você encontra as melhores pizzas da região!</p>
+          <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3 w-32 rounded-md font-semibold" href="#main">Try now</a>
+        </div>
+        <img class="size-3/4 object-cover" src="./midias/central.png" alt="imagem central">
+      </section>
+
+        <main id="main" class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-orange-500">Nossas Pizzas Destaques!</h2>
+            <p class="font-semibold pb-5">Check out our specials for today!</p>
+            <ul class="flex justify-center ">
+                <li class="flex flex-col items-center font-bold">
+                  <h3 class="text-xl pb-3 font-semibold text-orange-500">Frango com Catupiry</h3>
+                  <img class="size-36 object-cover" src="./midias/frango_catupiry.jpg" alt="Pizza Frango com Catupiry">
+                  <p class="font-semibold w-56 text-center py-5">Deliciosa combinação de frango desfiado com o cremoso Catupiry, perfeita para quem ama sabores suaves e irresistíveis!</p>
+                  <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3  w-32 rounded-md font-semibold" href="facaOseuPedido.html" target="_blank">Pedir agora</a>
                 </li>
                 
-                <li>
-                  <h3>Pizza Portuguesa</h3>
-                  <img src="https://th.bing.com/th/id/OIP.tZtkZqQlLLzaHzL2S1USgAHaE8?rs=1&pid=ImgDetMain" alt="Pizza Portuguesa" width="230" height="150">
-                  <p>Uma clássica escolha com presunto, ovos, cebola e pimentão, trazendo sabores tradicionais e marcantes.</p>
-                  <a href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+                <li class="flex flex-col items-center font-bold">
+                  <h3 class="text-xl pb-3 font-semibold text-orange-500">Portuguesa</h3>
+                  <img class="size-36 object-cover" src="./midias/Portuguesa.jpg" alt="Pizza Portuguesa">
+                  <p class="font-semibold w-56 text-center pt-5 pb-11">Uma clássica escolha com presunto, ovos, cebola e pimentão, trazendo sabores tradicionais e marcantes.</p>
+                  <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3  w-32 rounded-md font-semibold" href="facaOseuPedido.html" target="_blank">Pedir agora</a>
                 </li>
                 
-                <li>
-                  <h3>Pizza Marguerita</h3>
-                  <img src="https://th.bing.com/th/id/OIP.SgB8sYIxkxJj-p3Vs8MaCgHaE8?rs=1&pid=ImgDetMain" alt="Pizza Marguerita" width="230" height="150">
-                  <p>O sabor fresco do manjericão, tomate e queijo derretido em uma combinação simples, mas deliciosa.</p>
-                  <a href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+                <li class="flex flex-col items-center font-bold">
+                  <h3 class="text-xl pb-3 font-semibold text-orange-500">Marguerita</h3>
+                  <img class="size-36 object-cover" src="./midias/marguerita.jpg" alt="Pizza Marguerita">
+                  <p class="font-semibold w-56 text-center py-5">O sabor fresco do manjericão, tomate e queijo derretido em uma combinação simples, mas deliciosa.</p>
+                  <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3  w-32 rounded-md font-semibold" href="facaOseuPedido.html" target="_blank">Pedir agora</a>
                 </li>
                 
-                <li>
-                  <h3>Pizza Quatro Queijos</h3>
-                  <img src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg" alt="Pizza Quatro Queijos" width="230" height="150">
-                  <p>Para os amantes de queijo: uma mistura de mussarela, gorgonzola, parmesão e provolone.</p>
-                  <a href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+                <li class="flex flex-col items-center font-bold">
+                  <h3 class="text-xl pb-3 font-semibold text-orange-500">Quatro Queijos</h3>
+                  <img class="size-36 object-cover" src="./midias/quatro_queijos.jpg" alt="Pizza Quatro Queijos">
+                  <p class="font-semibold w-56 text-center pt-6 pb-16">Uma mistura de mussarela, gorgonzola, parmesão e provolone.</p>
+                  <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3 w-32 rounded-md font-semibold" href="facaOseuPedido.html" target="_blank">Pedir agora</a>
                 </li>
                 
-                <li>
-                  <h3>Pizza Chocolate com Morango</h3>
-                  <img src="https://th.bing.com/th/id/OIP.eF1fWG_UzZy0Z61dW8BBdwHaE8?rs=1&pid=ImgDetMain" alt="Pizza Chocolate com Morango" width="230" height="150">
-                  <p>Uma sobremesa irresistível: chocolate derretido coberto com morangos frescos.</p>
-                  <a href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+                <li class="flex flex-col items-center font-bold">
+                  <h3 class="text-xl pb-3 font-semibold text-orange-500">Chocolate com Morango</h3>
+                  <img class="size-36 object-cover" src="./midias/choco_morango.jpg" alt="Pizza Chocolate com Morango">
+                  <p class="font-semibold w-56 text-center pt-8 pb-20">Chocolate derretido coberto com morangos frescos.</p>
+                  <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3 w-32 rounded-md font-semibold" href="facaOseuPedido.html" target="_blank">Pedir agora</a>
                 </li>
               </ul>
 
-              <section id="sobre-nos">
-                <h2>Sobre Nós</h2>
+              <section class="flex" id="sobre-nos">
+
+                <div>
+                  <h2 class="text-2xl font-bold text-orange-500">Sobre Nós</h2>
+                  
+                  <img class="size-1/2" src="./midias/fachada.jpg" alt="Imagem da Pizzaria Pizza Delícia">
                 
-                <img src="https://th.bing.com/th/id/R.cd420952fc305983f7ceb7cd53f27306?rik=%2bcL5%2fYANl74UWw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-yr9srFiTAKw%2fUFi1ZMGGWwI%2fAAAAAAAAAws%2fLUifqRYLhJg%2fs1600%2ffachada-2.jpg&ehk=ykg02lrNHAownu3YnEEhjdPNtmBdJj0o29iTIu%2fkWeU%3d&risl=&pid=ImgRaw&r=0" alt="Imagem da Pizzaria Pizza Delícia" width="80%">
-              
-                <p>
-                  A <strong>Pizza Delícia</strong> nasceu de uma paixão por massas e ingredientes frescos. Fundada há mais de 20 anos, nossa pizzaria começou como um pequeno negócio familiar, com o objetivo de trazer o verdadeiro sabor da pizza artesanal para nossa comunidade.
-                </p>
+                  <p class="font-semibold">
+                    A <strong>Pizza Delícia</strong> nasceu de uma paixão por massas e ingredientes frescos. Fundada há mais de 20 anos, nossa pizzaria começou como um pequeno negócio familiar, com o objetivo de trazer o verdadeiro sabor da pizza artesanal para nossa comunidade.
+                  </p>
+                  
+                  <p class="font-semibold">
+                    Ao longo dos anos, nossa dedicação e amor pela culinária italiana nos tornaram uma referência de qualidade e sabor. Continuamos a utilizar ingredientes selecionados, receitas tradicionais e técnicas aperfeiçoadas, tudo para garantir uma experiência gastronômica única em cada fatia.
+                  </p>
                 
-                <p>
-                  Ao longo dos anos, nossa dedicação e amor pela culinária italiana nos tornaram uma referência de qualidade e sabor. Continuamos a utilizar ingredientes selecionados, receitas tradicionais e técnicas aperfeiçoadas, tudo para garantir uma experiência gastronômica única em cada fatia.
-                </p>
-              
-                <p>
-                  Nossos valores são baseados em <strong>qualidade</strong>, <strong>tradição</strong> e <strong>atendimento</strong>. Acreditamos que cada cliente faz parte da nossa história, e é por isso que nos esforçamos para oferecer um serviço acolhedor e autêntico. Na Pizza Delícia, nosso compromisso é com a satisfação e o bem-estar dos nossos clientes.
-                </p>
+                  <p class="font-semibold">
+                    Nossos valores são baseados em <strong>qualidade</strong>, <strong>tradição</strong> e <strong>atendimento</strong>. Acreditamos que cada cliente faz parte da nossa história, e é por isso que nos esforçamos para oferecer um serviço acolhedor e autêntico. Na Pizza Delícia, nosso compromisso é com a satisfação e o bem-estar dos nossos clientes.
+                  </p>
+                </div>
               </section>
               
         </main>
-        <footer>
-            <p>&copy; 2024 Pizza Delicia</p>
-            <p>Contatos: (85)988776655| Email: <a href="pizzaDelicia2024@gmail.com">pizzaDelicia2024@gmail.com</a></p>
+        <footer class="flex justify-center gap-3">
+            <p class="font-semibold">&copy; 2024 Pizza Delicia</p>
+            <p class="font-semibold">Contatos: (85)988776655| Email: <a href="pizzaDelicia2024@gmail.com">pizzaDelicia2024@gmail.com</a></p>
             <a href="https://www.instagram.com/twobrotherspizzas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram Pizza Delicia</a>
             
         </footer>
