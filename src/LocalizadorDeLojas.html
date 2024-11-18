@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localizador de Lojas - Pizza Delícia</title>
+    <link href="../styles/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <header class="bg-gray-800 py-4 shadow-md">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <a href="home.html" class="text-orange-400 hover:text-orange-300 font-bold">
+                Voltar para a página inicial
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section aria-labelledby="titulo-localizador">
+            <header class="mb-8 text-center">
+                <h1 id="titulo-localizador" class="text-4xl font-bold text-orange-400">Encontre a loja mais próxima!</h1>
+                <p class="text-gray-300 mt-2">
+                    Localize a unidade Pizza Delícia mais próxima e confira nossos horários e atendimento
+                </p>
+            </header>
+
+            <!-- Layout em Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Lista de Endereços -->
+                <article>
+                    <header class="mb-4">
+                        <h2 class="text-2xl font-semibold text-gray-100">Nossas Unidades</h2>
+                    </header>
+                    <div class="overflow-x-auto bg-gray-800 p-4 rounded-lg shadow-lg">
+                        <table class="table-auto w-full text-left">
+                            <caption class="text-gray-300 text-lg mb-4">Lista de Endereços, Telefones e Horários de Funcionamento</caption>
+                            <thead>
+                                <tr class="bg-gray-700">
+                                    <th class="py-2 px-4 text-orange-300">Endereço</th>
+                                    <th class="py-2 px-4 text-orange-300">Telefone</th>
+                                    <th class="py-2 px-4 text-orange-300">Horário de Funcionamento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-2 px-4">Av. Washington Soares, 85 - Edson Queiroz, Fortaleza - CE, 60811-341</td>
+                                    <td class="py-2 px-4">(85) 1234-5678</td>
+                                    <td class="py-2 px-4">Seg a Dom: 10h às 23h</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-2 px-4">Av. Lineu Machado, 419 - Jóquei Clube, Fortaleza - CE, 60520-102</td>
+                                    <td class="py-2 px-4">(85) 8765-4321</td>
+                                    <td class="py-2 px-4">Seg a Sex: 24h</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-4">R. José de Matos França, 690 - Lagoa Seca, Juazeiro do Norte - CE, 63040-190</td>
+                                    <td class="py-2 px-4">(88) 1357-2468</td>
+                                    <td class="py-2 px-4">Seg a Sex: 11h às 22h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Mapa -->
+                <section>
+                    <header class="mb-4">
+                        <h2 class="text-2xl font-semibold text-gray-100">Localização no Mapa</h2>
+                    </header>
+                    <div class="h-full w-full bg-gray-800 rounded-lg shadow-lg">
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1dSF_8WapuQ1T39S2vJD-yQZmLVukLBk&ehbc=2E312F" class="w-full h-full rounded-lg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Ambiente -->
+            <section class="mt-12">
+                <header>
+                    <h2 class="text-2xl font-semibold text-gray-100">Ambiente Aconchegante</h2>
+                </header>
+                <figure class="bg-gray-800 p-4 rounded-lg shadow-lg mt-4">
+                    <img src="https://turismoetc.com.br/wp-content/uploads/2015/04/pizza.jpg" alt="Imagem do ambiente aconchegante da Pizza Delícia" class="rounded-lg shadow-md w-full">
+                    <figcaption class="text-gray-300 mt-2 text-center">
+                        Conheça o ambiente acolhedor de nossas lojas
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
