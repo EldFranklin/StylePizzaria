@@ -1,200 +1,208 @@
 <!DOCTYPE html> 
 <html lang="pt-BR">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="styles/output.css" rel="stylesheet"/>
   <title>Pizzaria Delícia</title>
 </head> 
 
-<body>
+<body class="font-Quicksand box-border text-slate-100 bg-zinc-900" id="body">
   <header> 
-    <nav>
-      <ul>
-        <li><a href="home.html">Página Inicial</a></li>
-        <li><a href="facaOseuPedido.html">Página de Pedidos</a></li>
+    <nav class="flex flex-wrap items-center justify-between py-4 px-10 w-full shadow-xl text-orange-600 bg-zinc-900 max-[768px]:py-2 max-[768px]:px-5 max-[458px]:flex-col max-[458px]:items-start">
+      <p class="font-bold text-4xl max-[1200px]:text-3xl max-[768px]:text-2xl max-[576px]:text-2xl">Pizzaria Delícia</p>
+      <ul class="flex flex-wrap items-stretch gap-8 max-[992px]:flex-col max-[992px]:gap-4">
+        <li class="text-slate-100 text-lg font-semibold hover:text-orange-400 transition-all max-[1200px]:text-base max-[768px]:text-sm max-[458px]:text-xs"><a href="Home.html">Página Inicial</a></li>
+        <li class="text-slate-100 text-lg font-semibold hover:text-orange-400 transition-all max-[1200px]:text-base max-[768px]:text-sm max-[458px]:text-xs"><a href="facaOseuPedido.html">Faça o Seu Pedido</a></li>
       </ul>
     </nav>
   </header> 
-  
-  <main>     
+
+  <main>
     
-    <section id="cardapio">
-      <h2>Nosso Cardápio</h2>
-      <p>Nessa seção você encontra o <strong>PARAÍSO</strong>! Navegue entre os diversos tipos
-        de sabores e encontre o que mais lhe agrada experimentar em nosso estabelecimento.
-      </p>
+    <section class="flex flex-col items-center my-12 mx-auto w-full py-0 px-5" id="menu">
+        <p class="text-center text-xl w-full mb-4 max-[992px]:text-xl max-[992px]:mb-4 max-[768px]:text-lg max-[768px]:mb-4 max-[576px]:text-base">Nessa seção você encontrará o <strong>PARAÍSO</strong>!</p>
+        <p class="text-center text-xl w-full mb-4 max-[992px]:text-xl max-[992px]:mb-4 max-[768px]:text-lg max-[768px]:mb-4 max-[576px]:text-base">Navegue entre os diversos tipos de sabores e encontre o que mais lhe agrada para experimentar.</p>
+      <h1 class="text-orange-600 text-6xl font-semibold mt-12 -mb-20 max-[1200px]:text-6xl max-[768px]:text-5xl max-[458px]:text-5xl">Menu</h1>
+    </section>
 
-      <article>
-        <h3>Pizzas Tradicionais</h3>
+    <section class="flex flex-col justify-evenly text-center my-5 mx-auto w-full" id="cardapio">
+      <article class="text-rose-100 items-center">
+        <h3 class="text-4xl mt-10 mb-4 font-semibold max-[576px]:text-3xl max-[458px]:text-2xl">Pizzas Tradicionais</h3>
         
-        <figure>
-          <img src="https://media.istockphoto.com/id/938742222/pt/foto/cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=IMbsKsB8sD78lAiCFax9rJAfl9nMvvRurZkrmNIZMQA=" alt="pizzas_tradicionais" width="230" height="150">
-        </figure>
+        <section class="flex justify-center items-center text-center gap-7 my-5 max-[992px]:flex-col max-[992px]:gap-5">
+          <figure>
+            <img class="max-w-56 h-auto rounded-lg max-[992px]:w-4/5 max-[768px]:max-w[30%] max-[576px]:max-w[25%]" src="https://sgnh.com.br/wp-content/uploads/2021/07/pizza_calabresa.png" alt="pizzas_tradicionais">
+          </figure>
 
-        <table border="1">
-          <caption>Tabela de Sabores</caption> 
-      
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Descrição</th>
-              <th>Preço</th>
-            </tr>
-          </thead>
-      
-          <tbody>
-            <tr>
-              <td>Marguerita</td>
-              <td>Molho de tomate, queijo mozzarella e manjericão.</td>
-              <td>R$35</td>
-            </tr>
-            <tr>
-              <td>Calabresa</td>
-              <td>Molho de tomate, queijo, calabresa e cebola.</td>
-              <td>R$35</td>
-            </tr>
-            <tr>
-              <td>Napolitana</td>
-              <td>Molho de tomate, queijo, azeitonas e orégano.</td>
-              <td>R$35</td>
-            </tr>
-          </tbody>
+          <table class="border-collapse table-fixed p-2 w-3/5 max-[1200px]:w-3/5 max-[992px]:w-11/12 max-[768px]:w-11/12">
+            <thead>
+              <tr>
+                <th class="w-3/4 text-xl p-2 items-center bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Sabor</th>
+                <th class="w-3/4 text-xl p-2 items-center bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Descrição</th>
+                <th class="w-3/4 text-xl p-2 items-center bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Preço</th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Marguerita</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Molho de tomate, queijo mozzarella e manjericão.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$35</td>
+              </tr>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Calabresa</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Molho de tomate, queijo, calabresa e cebola.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$35</td>
+              </tr>
+              <tr> 
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Napolitana</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Molho de tomate, queijo, azeitonas e orégano.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$35</td>
+              </tr>
+            </tbody>
 
-          <tfoot>
-            <tr>
-              <td>Portuguesa</td>
-              <td>Molho de tomate, queijo, presunto, ovos, cebola e azeitonas.</td>
-              <td>R$35</td>
-            </tr>
-          </tfoot>
-        </table>
+            <tfoot>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Portuguesa</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Molho de tomate, queijo, presunto, ovos, cebola e azeitonas.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$35</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
       </article>
 
-      <article>
-        <h3>Pizzas Especiais</h3>
+      <article class="text-rose-100 items-center">
+        <h3 class="text-4xl mt-10 mb-4 font-semibold max-[576px]:text-3xl max-[458px]:text-2xl">Pizzas Especiais</h3>
         
-        <figure>
-          <img src="https://joysushi.com.br/wp-content/uploads/2013/06/pizza-vegetariana.jpg" alt="pizzas_especiais" width="230" height="150">
-        </figure>
+        <section class="flex justify-center items-center text-center gap-7 my-5 max-[992px]:flex-col max-[992px]:gap-5">
+          <figure>
+            <img class="max-w-56 h-auto rounded-lg max-[992px]:w-4/5 max-[768px]:max-w[30%] max-[576px]:max-w[25%]" src="https://napolipizza646.com/wp-content/uploads/2020/12/vegetariana.png" alt="pizzas_especiais">
+          </figure>
 
-        <table border="1">
-          <caption>Tabela de Sabores</caption> 
+          <table class="border-collapse table-fixed p-2 w-3/5 max-[1200px]:w-3/5 max-[992px]:w-11/12 max-[768px]:w-11/12">
+            <thead>
+              <tr>
+                <th class="w-3/4 text-xl p-2 bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Sabor</th>
+                <th class="w-3/4 text-xl p-2 bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Descrição</th>
+                <th class="w-3/4 text-xl p-2 bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Preço</th>
+              </tr>
+            </thead>
       
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Descrição</th>
-              <th>Preço</th>
-            </tr>
-          </thead>
-      
-          <tbody>
-            <tr>
-              <td>Quatro Queijos</td>
-              <td>Queijo mozzarella, gorgonzola, parmesão e catupiry.</td>
-              <td>R$42</td>
-            </tr>
-            <tr>
-              <td>Frango com Catupiry</td>
-              <td>Frango desfiado, catupiry, azeitonas e cebolas.</td>
-              <td>R$42</td>
-            </tr>
-          </tbody>
+            <tbody>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Quatro Queijos</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Queijo mozzarella, gorgonzola, parmesão e catupiry.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$42</td>
+              </tr>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Frango com Catupiry</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Frango desfiado, catupiry, azeitonas e cebolas.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$42</td>
+              </tr>
+            </tbody>
 
-          <tfoot>
-            <tr>
-              <td>Vegetariana</td>
-              <td>Molho de tomate, queijo, berinjela, abobrinha, pimentão e cebola.</td>
-              <td>R$42</td>
-            </tr>
-          </tfoot>
-        </table>
+            <tfoot>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Vegetariana</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Molho de tomate, queijo, berinjela, abobrinha, pimentão e cebola.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$42</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
       </article>
 
-      <article>
-        <h3>Pizzas Doces</h3>
+      <article class="text-rose-100 items-center">
+        <h3 class="text-4xl mt-10 mb-4 font-semibold max-[576px]:text-3xl max-[458px]:text-2xl">Pizzas Doces</h3>
         
-        <figure>
-          <img src="https://media.istockphoto.com/id/509535100/pt/foto/pizza-de-morango.jpg?s=612x612&w=0&k=20&c=JEEKOTsvI9A_ykDkFzelZ5b5wzZzfuDuPbwXQU9MSJI=" alt="pizzas_doces" width="230" height="150">
-        </figure>
-        <table border="1">
-          <caption>Tabela de Sabores</caption> 
+        <section class="flex justify-center items-center text-center gap-7 my-5 max-[992px]:flex-col max-[992px]:gap-5">
+          <figure>
+            <img class="max-w-56 h-auto rounded-lg max-[992px]:w-4/5 max-[768px]:max-w[30%] max-[576px]:max-w[25%]" src="https://familiapizzaria.com.br/wp-content/uploads/2024/05/Charge.png" alt="pizzas_doces">
+          </figure>
+          
+          <table class="border-collapse table-fixed p-2 w-3/5 max-[1200px]:w-3/5 max-[992px]:w-11/12 max-[768px]:w-11/12">
+            <thead>
+              <tr>
+                <th class="w-3/4 text-xl p-2 bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Sabor</th>
+                <th class="w-3/4 text-xl p-2 bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Descrição</th>
+                <th class="w-3/4 text-xl p-2 bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Preço</th>
+              </tr>
+            </thead>
       
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Descrição</th>
-              <th>Preço</th>
-            </tr>
-          </thead>
-      
-          <tbody>
-            <tr>
-              <td>Chocolate com Morango</td>
-              <td>Massa doce coberta com nutella, morangos frescos e chocolate derretido.</td>
-              <td>R$45</td>
-            </tr>
-            <tr>
-              <td>Banana com Canela</td>
-              <td>Massa doce com bananas, açúcar, canela e cobertura de chocolate.</td>
-              <td>R$45</td>
-            </tr>
-          </tbody>
+            <tbody>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Chocolate com Morango</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Massa doce coberta com nutella, morangos frescos e chocolate derretido.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$45</td>
+              </tr>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Banana com Canela</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Massa doce com bananas, açúcar, canela e cobertura de chocolate.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$45</td>
+             </tr>
+            </tbody>
 
-          <tfoot>
-            <tr>
-              <td>Maça com Canela</td>
-              <td>Massa doce com fatias de maçã, canela e açúcar, servida com creme de baunilha.</td>
-              <td>R$45</td>
-            </tr>
-          </tfoot>
-        </table>
+            <tfoot>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Maça com Canela</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Massa doce com fatias de maçã, canela e açúcar, servida com creme de baunilha.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$45</td>
+              </tr>
+           </tfoot>
+          </table>
+        </section>
       </article>
 
-      <article>
-        <h3>Sobremesas</h3>
+      <article class="text-rose-100 items-center">
+        <h3 class="text-4xl mt-10 mb-4 font-semibold max-[576px]:text-3xl max-[458px]:text-2xl">Sobremesas</h3>
         
-        <figure>
-          <img src="https://i.ytimg.com/vi/R75QGbXpGxc/maxresdefault.jpg" alt="sobremesas" width="230" height="150">
-        </figure>
-        <table border="1">
-          <caption>Tabela de Sabores</caption> 
-      
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Descrição</th>
-              <th>Preço</th>
-            </tr>
-          </thead>
-      
-          <tbody>
-            <tr>
-              <td>Torta de Limão</td>
-              <td>Torta crocante com recheio de limão.</td>
-              <td>R$7</td>
-            </tr>
-            <tr>
-              <td>Brownie</td>
-              <td>Bolo de chocolate com nozes.</td>
-              <td>R$7</td>
-            </tr>
-            <tr>
-              <td>Pavê de Chocolate</td>
-              <td>Camadas de biscoito e creme de chocolate.</td>
-              <td>R$7</td>
-            </tr>
-          </tbody>
+        <section class="flex justify-center items-center text-center gap-7 my-5 max-[992px]:flex-col max-[992px]:gap-5">
+          <figure>
+            <img class="max-w-56 h-auto rounded-lg max-[992px]:w-4/5 max-[768px]:max-w[30%] max-[576px]:max-w[25%]" src="https://static.vecteezy.com/system/resources/previews/046/828/277/non_2x/delicious-chocolate-brownies-isolated-on-transparent-background-free-png.png" alt="sobremesas">
+          </figure>
 
-          <tfoot>
-            <tr>
-              <td>Gelato</td>
-              <td>Sorvete artesanal em diversos sabores.</td>
-              <td>R$7</td>
-            </tr>
-          </tfoot>
-        </table>
+          <table class="border-collapse table-fixed p-2 w-3/5 max-[1200px]:w-3/5 max-[992px]:w-11/12 max-[768px]:w-11/12">
+            <thead>
+              <tr>
+                <th class="w-3/4 text-xl p-2 bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Nome</th>
+                <th class="w-3/4 text-xl p-2 bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Descrição</th>
+                <th class="w-3/4 text-xl p-2 bg-orange-600 max-[768px]:text-xl max-[576px]:text-base max-[458px]:text-base">Preço</th>
+              </tr>
+            </thead>
+      
+            <tbody>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Torta de Limão</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Torta crocante com recheio de limão.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$7</td>
+              </tr>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Brownie</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Bolo de chocolate com nozes.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$7</td>
+              </tr>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Pavê de Chocolate</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Camadas de biscoito e creme de chocolate.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$7</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td class="w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Gelato</td>
+                <td class="text-justify w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">Sorvete artesanal em diversos sabores.</td>
+                <td class="text-orange-400 font-semibold w-3/4 text-xl p-2 max-[768px]:text-lg max-[576px]:text-base max-[458px]:text-sm">R$7</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
       </article>
     </section>
 
