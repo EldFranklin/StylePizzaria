@@ -3,22 +3,25 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Faça seu Pedido</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
       <link href="../styles/output.css" rel="stylesheet">
+      <title>Faça seu Pedido</title>
    </head>
    <body style="background-image: url('../midias/background.jpg'); background-size: cover;"
-      class="bg-gray-900 text-white font-sans flex flex-col items-end min-h-screen pt-20">
-      <header class="bg-gray-800 p-4 w-full z-10 fixed top-0 flex items-center justify-between shadow-lg">
+      class="bg-zinc-900 text-white font-Quicksand flex flex-col items-end min-h-screen pt-20">
+      <header class="bg-zinc-900 p-4 w-full z-10 fixed top-0 flex items-center justify-between shadow-lg">
          <h1 class="text-7xl font-bold text-orange-500 border-radius px-8">Pizzaria Delícia</h1>
          <nav>
             <ul class="flex space-x-8">
-               <li><a href="Home.html" class="text-white hover:text-orange-400">Página Inicial</a></li>
-               <li><a href="promocoes.html" class="text-white hover:text-orange-400">Promoções</a></li>
-               <li><a href="LocalizadorDeLojas.html" class="text-white hover:text-orange-400">Conheça nossos espaços</a></li>
+               <li><a href="Home.html" class=" font-bold text-white hover:text-orange-400 transition-all text-xl">Página Inicial</a></li>
+               <li><a href="promocoes.html" class="font-bold text-white hover:text-orange-400 transition-all text-xl">Promoções</a></li>
+               <li><a href="LocalizadorDeLojas.html" class="font-bold text-white hover:text-orange-400 transition-all text-xl">Conheça nossos espaços</a></li>
             </ul>
          </nav>
       </header>
-      <main class="bg-gray-800 rounded-lg shadow-lg max-w-2xl p-8 me-8 my-16">
+      <main class="bg-zinc-800 rounded-lg shadow-lg max-w-2xl p-8 me-8 my-16">
          <section>
             <header>
                <h2 class="text-3xl font-bold text-center text-orange-500 mb-6">Faça seu Pedido!</h2>
@@ -90,7 +93,7 @@
                      <option value="pix">PIX</option>
                   </select>
                </fieldset>
-               <button type="submit" class="w-full p-3 bg-orange-500 text-gray-900 font-bold rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400">
+               <button type="submit" class="w-full p-3 bg-orange-500 text-gray-900 font-bold rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 hover:text-white transition-all">
                Enviar Pedido
                </button>
             </form>
