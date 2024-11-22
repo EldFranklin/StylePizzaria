@@ -84,6 +84,7 @@ Este projeto foi desenvolvido por:
     <td align="center"><a href="https://github.com/ph3523"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80484091?v=4" width="100px;" alt=""/><br /><sub><b>Pedro Barroso</b></sub></a><br /><a href="mailto:ph.barroso3523@gmail.com" title="Email">✉️</a></td>
     <td align="center"><a href="https://github.com/EldFranklin"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/105466304?v=4" width="100px;" alt=""/><br /><sub><b>Wesley Franklin</b></sub></a><br /><a href="mailto:wesleyfranklin@alu.ufc.br" title="Email">✉️</a></td>
     <td align="center"><a href="https://github.com/carlosreiker"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/172124959?v=4" width="100px;" alt=""/><br /><sub><b>Carlos Reiker</b></sub></a><br /><a href="carlos.reiker@hotmail.com" title="Email">✉️</a></td>
+    <td align="center"><a href="https://github.com/pedrohenriqux"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/144057455?v=4" width="100px;" alt=""/><br /><sub><b>Pedro Henrique Sousa</b></sub></a><br /><a href="malito:sousa.pedro08@aluno.ifce.edu.br" title="Email">✉️</a></td>
     
   </tr>
  
