@@ -1,9 +1,8 @@
 # Pizzaria Delícia
 
-Bem-vindo ao repositório do site da Pizzaria Delícia! Este projeto é um site para uma pizzaria fictícia para o Curso TIC 20 da Capacita Brasil na trilha de aprendizado de FullStack, o intuito desse site é finalizar o Modulo Básico da trilha utilizando as tecnologias e conceitos aprendidos nesse modulo as tecnologias aprendidas foram Html, Css, TailwindCss e Git.
+Bem-vindo ao repositório do site da Pizzaria Delícia! Este projeto é um site para uma pizzaria fictícia para o Curso TIC 20 da Capacita Brasil na trilha de aprendizado de FullStack e da Turma <strong>FSN3</strong>, o intuito desse site é finalizar o Modulo Básico da trilha utilizando as tecnologias e conceitos aprendidos nesse modulo as tecnologias aprendidas foram Html, Css, TailwindCss e Git.
 
 ---
-
 ## Estrutura do Projeto
 
 ````bash
@@ -53,31 +52,24 @@ Bem-vindo ao repositório do site da Pizzaria Delícia! Este projeto é um site 
     npm run dev
     ```
 ---
-## Estrutura dos Arquivos
+## Responsabilidades de Cada Membro
 
-- `src/`: Contém os arquivos HTML do site.
-  - `cardapio.html`: Página do cardápio.
-  - `facaOseuPedido.html`: Página para fazer pedidos.
-  - `Home.html`: Página inicial.
-  - `LocalizadorDeLojas.html`: Página para localizar lojas.
-  - `promocoes.html`: Página de promoções.
+- Pedro Henrique da Silveira Barroso: Criação e Estilização da página HOME, Criação do ReadMe, Arquitetura de branchs, padronização das páginas. 
+<br>
 
-- `styles/`: Contém os arquivos CSS.
-  - `input.css`: Arquivo de entrada para Tailwind CSS.
-  - `output.css`: Arquivo de saída gerado pelo Tailwind CSS.
+- Wesley Franklin:
+<br>
 
-- `tailwind.config.js`: Configuração do Tailwind CSS.
+- Carlos Reiker:
+<br>
 
-- `package.json`: Contém as dependências e scripts do projeto.
----
-## Scripts Disponíveis
+- Pedro Henrique Sousa:
 
-- `npm run dev`: Executa o Tailwind CSS em modo de desenvolvimento, observando mudanças nos arquivos CSS.
 
 ---
 ## Autores
 
-Este projeto foi desenvolvido por:
+Este projeto foi desenvolvido pelos membros da Equipe 3 composto por:
 
 <table>
   <tr>
@@ -88,4 +80,3 @@ Este projeto foi desenvolvido por:
   </tr>
  
 </table>
-
