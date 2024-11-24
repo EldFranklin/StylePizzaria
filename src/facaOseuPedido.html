@@ -7,21 +7,30 @@
       <link href="../styles/output.css" rel="stylesheet">
    </head>
    <body style="background-image: url('../midias/background.jpg'); background-size: cover;"
-      class="bg-gray-900 text-white font-sans flex flex-col items-end min-h-screen pt-20">
-      <header class="bg-gray-800 p-4 w-full z-10 fixed top-0 flex items-center justify-between shadow-lg">
-         <h1 class="text-7xl font-bold text-orange-500 border-radius px-8">Pizzaria Delícia</h1>
-         <nav>
-            <ul class="flex space-x-8">
-               <li><a href="Home.html" class="text-white hover:text-orange-400">Página Inicial</a></li>
-               <li><a href="promocoes.html" class="text-white hover:text-orange-400">Promoções</a></li>
-               <li><a href="LocalizadorDeLojas.html" class="text-white hover:text-orange-400">Conheça nossos espaços</a></li>
+      class="bg-zinc-900 text-white font-sans flex flex-col items-end min-h-screen pt-20">
+      <header class="bg-zinc-900 p-4 w-full z-10 fixed top-0 flex items-center shadow-lg">
+         <nav class="w-full flex items-center justify-between px-7">
+            <h1 class="font-bold text-orange-500 text-3xl">Delicia</h1>
+            <ul class="list-none flex gap-7">
+              <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl">
+               <a href="Home.html">Página Inicial</a>
+              </li>
+               <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl">
+                  <a href="cardapio.html" target="_blank">Cardapio</a>
+               </li>
+               <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl">
+                  <a href="promocoes.html" target="_blank">Promoções</a>
+               </li>
+               <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl">
+                  <a href="LocalizadorDeLojas.html" target="_blank">Lojas</a>
+               </li>
             </ul>
          </nav>
       </header>
-      <main class="bg-gray-800 rounded-lg shadow-lg max-w-2xl p-8 me-8 my-16">
+      <main class="bg-zinc-900 rounded-lg shadow-lg max-w-2xl p-8 me-8 my-16">
          <section>
             <header>
-               <h2 class="text-3xl font-bold text-center text-orange-500 mb-6">Faça seu Pedido!</h2>
+               <h2 class="text-3xl font-bold text-center text-orange-500 mb-6 font-quicksand">Faça seu Pedido!</h2>
                <p class="text-center text-gray-300 mb-6">Preencha o formulário abaixo para realizar o seu pedido.</p>
             </header>
             <form action="enviar_pedido.html" method="post" class="space-y-6">
@@ -30,15 +39,15 @@
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                      <div>
                         <label for="nome" class="block text-sm">Nome:</label>
-                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome" class="w-full p-2 rounded-md bg-gray-900 border border-gray-700 text-white">
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
                      </div>
                      <div>
                         <label for="email" class="block text-sm">E-mail:</label>
-                        <input type="email" id="email" name="email" required placeholder="Digite seu email" class="w-full p-2 rounded-md bg-gray-900 border border-gray-700 text-white">
+                        <input type="email" id="email" name="email" required placeholder="Digite seu email" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
                      </div>
                      <div class="col-span-2">
                         <label for="telefone" class="block text-sm">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" required class="w-full p-2 rounded-md bg-gray-900 border border-gray-700 text-white">
+                        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" required class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
                      </div>
                   </div>
                </fieldset>
@@ -47,7 +56,7 @@
                   <div class="mt-4 space-y-4">
                      <div>
                         <label for="pizza" class="block text-sm">Sabor:</label>
-                        <select id="pizza" name="pizza" required class="w-full p-2 rounded-md bg-gray-900 border border-gray-700 text-white">
+                        <select id="pizza" name="pizza" required class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
                            <option value="" disabled selected>Selecione uma pizza</option>
                            <option value="marguerita">Marguerita</option>
                            <option value="calabresa">Calabresa</option>
@@ -78,11 +87,11 @@
                </fieldset>
                <fieldset class="border border-gray-700 p-4 rounded-md">
                   <label for="observacoes" class="block text-sm">Observações:</label>
-                  <textarea id="observacoes" name="observacoes" rows="4" placeholder="Escreva suas observações..." class="w-full p-2 rounded-md bg-gray-900 border border-gray-700 text-white"></textarea>
+                  <textarea id="observacoes" name="observacoes" rows="4" placeholder="Escreva suas observações..." class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white"></textarea>
                </fieldset>
                <fieldset class="border border-gray-700 p-4 rounded-md">
                   <label for="pagamento" class="block text-sm">Método de Pagamento:</label>
-                  <select id="pagamento" name="pagamento" required class="w-full p-2 rounded-md bg-gray-900 border border-gray-700 text-white">
+                  <select id="pagamento" name="pagamento" required class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
                      <option value="" disabled selected>Escolha o método de pagamento</option>
                      <option value="dinheiro">Dinheiro</option>
                      <option value="cartao_credito">Cartão de Crédito</option>
