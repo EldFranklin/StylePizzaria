@@ -57,7 +57,8 @@ Bem-vindo ao repositório do site da Pizzaria Delícia! Este projeto é um site 
 - Pedro Henrique da Silveira Barroso: Criação e Estilização da página HOME, Criação do ReadMe, Arquitetura de branchs, padronização das páginas. 
 <br>
 
-- Wesley Franklin:
+- Wesley Franklin: Criação e Estitilização da página faça o seu pedido, promoções, pequenos ajustes de padronização
+
 <br>
 
 - Carlos Reiker:
