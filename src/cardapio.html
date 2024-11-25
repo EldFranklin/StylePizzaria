@@ -1,3 +1,10 @@
+<!--  menu styling and responsive design done by the member Pedro Henrique Maciel de Sousa  -->
+<!--  github: https://github.com/pedrohenriqux  -->
+
+<!--  credits:  -->
+<!--  refactoring for Tailwind done by the member Pedro Henrique Barroso  -->
+<!--  github: https://github.com/ph3523  -->
+
 <!DOCTYPE html> 
 <html lang="pt-BR">
 
@@ -12,15 +19,21 @@
 </head> 
 
 <body class="font-Quicksand box-border text-slate-100 bg-zinc-900" id="body">
-  <header> 
-    <nav class="flex flex-wrap items-center justify-between py-4 px-10 w-full shadow-xl text-orange-600 bg-zinc-900 max-[768px]:py-2 max-[768px]:px-5 max-[458px]:flex-col max-[458px]:items-start">
-      <p class="font-bold text-4xl max-[1200px]:text-3xl max-[768px]:text-2xl max-[576px]:text-2xl">Pizzaria Delícia</p>
-      <ul class="flex flex-wrap items-stretch gap-8 max-[992px]:flex-col max-[992px]:gap-4">
-        <li class="text-slate-100 text-lg font-semibold hover:text-orange-400 transition-all max-[1200px]:text-base max-[768px]:text-sm max-[458px]:text-xs"><a href="Home.html">Página Inicial</a></li>
-        <li class="text-slate-100 text-lg font-semibold hover:text-orange-400 transition-all max-[1200px]:text-base max-[768px]:text-sm max-[458px]:text-xs"><a href="facaOseuPedido.html">Faça o Seu Pedido</a></li>
+  <header>
+    <nav class="bg-zinc-900 flex items-center justify-between px-7 py-2.5">
+      <h1 class=" font-bold text-orange-500 text-3xl">Pizzaria Delícia</h1>
+      <ul class="list-none flex gap-7">
+        <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl">
+          <a href="Home.html">Página Inicial</a>
+        <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a href="promocoes.html"
+            target="_blank">Promoções</a></li>
+        <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a href="facaOseuPedido.html"
+            target="_blank">Pedidos</a></li>
+        <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a
+            href="LocalizadorDeLojas.html" target="_blank">Lojas</a></li>
       </ul>
     </nav>
-  </header> 
+  </header>
 
   <main>
     
@@ -205,11 +218,6 @@
         </section>
       </article>
     </section>
-
-  </main>  
-  
-  <footer>
-  </footer>
-  
+  </main>
 </body> 
 </html> 

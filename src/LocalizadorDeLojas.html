@@ -11,54 +11,69 @@
     <title>Localizador de Lojas - Pizza Delícia</title>
 </head>
 
-<body class="bg-zinc-900 text-gray-100 font-Quicksand">
-    <header class="bg-zinc-800 py-4 shadow-md">
-        <nav class="container mx-auto px-4 flex justify-between items-center">
-            <a href="home.html" class="text-orange-400 hover:text-orange-300 font-bold transition-all text-xl">
-                Voltar para a página inicial
-            </a>
+<body class="bg-zinc-900 text-gray-100 font-sans">
+    
+    <header>
+        <nav class="bg-zinc-900 flex items-center justify-between px-7 py-2.5">
+          <h1 class=" font-bold text-orange-500 text-3xl">Delícia</h1>
+          <ul class="list-none flex gap-7">
+            <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl">
+                <a href="Home.html" target="_blank">Página Inicial</a>
+               </li>
+            <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a href="cardapio.html"
+                target="_blank">Cardapio</a></li>
+            <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a href="promocoes.html"
+                target="_blank">Promoções</a></li>
+            <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl"><a href="facaOseuPedido.html"
+                target="_blank">Fazer Pedido</a></li>
+            
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <main class="container mx-auto px-4 py-8">
         <section aria-labelledby="titulo-localizador">
-            <header class="mb-8 text-center">
-                <h1 id="titulo-localizador" class="text-4xl font-bold text-orange-400">Encontre a loja mais próxima!</h1>
+           
+            <header class="text-center mb-8">
+                <h2 id="titulo-localizador" class="text-4xl font-bold text-orange-400">
+                    Encontre a loja mais próxima!
+                </h2>
                 <p class="text-gray-300 mt-2">
-                    Localize a unidade Pizza Delícia mais próxima e confira nossos horários e atendimento
+                    Localize a unidade Pizza Delícia mais próxima e confira nossos horários e atendimento.
                 </p>
             </header>
 
-            <!-- Layout em Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Lista de Endereços -->
+                <!-- Lista de unidades -->
                 <article>
                     <header class="mb-4">
-                        <h2 class="text-2xl font-semibold text-gray-100">Nossas Unidades</h2>
+                        <h3 class="text-2xl font-semibold text-gray-100">Nossas Unidades</h3>
                     </header>
-                    <div class="overflow-x-auto bg-zinc-800 p-4 rounded-lg shadow-lg">
+                    <div class="overflow-x-auto bg-zinc-900 p-4 rounded-lg shadow-lg">
                         <table class="table-auto w-full text-left">
-                            <caption class="text-gray-300 text-lg mb-4">Lista de Endereços, Telefones e Horários de Funcionamento</caption>
+                            <caption class="text-gray-300 text-lg mb-4">
+                                Lista de Endereços, Telefones e Horários de Funcionamento
+                            </caption>
                             <thead>
                                 <tr class="bg-zinc-700">
                                     <th class="py-2 px-4 text-orange-300">Endereço</th>
                                     <th class="py-2 px-4 text-orange-300">Telefone</th>
-                                    <th class="py-2 px-4 text-orange-300">Horário de Funcionamento</th>
+                                    <th class="py-2 px-4 text-orange-300">Horário</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="border-b border-gray-700">
-                                    <td class="py-2 px-4">Av. Washington Soares, 85 - Edson Queiroz, Fortaleza - CE, 60811-341</td>
+                                    <td class="py-2 px-4">Av. Washington Soares, 85 - Edson Queiroz, Fortaleza - CE</td>
                                     <td class="py-2 px-4">(85) 1234-5678</td>
                                     <td class="py-2 px-4">Seg a Dom: 10h às 23h</td>
                                 </tr>
                                 <tr class="border-b border-gray-700">
-                                    <td class="py-2 px-4">Av. Lineu Machado, 419 - Jóquei Clube, Fortaleza - CE, 60520-102</td>
+                                    <td class="py-2 px-4">Av. Lineu Machado, 419 - Jóquei Clube, Fortaleza - CE</td>
                                     <td class="py-2 px-4">(85) 8765-4321</td>
                                     <td class="py-2 px-4">Seg a Sex: 24h</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-2 px-4">R. José de Matos França, 690 - Lagoa Seca, Juazeiro do Norte - CE, 63040-190</td>
+                                    <td class="py-2 px-4">R. José de Matos França, 690 - Lagoa Seca, Juazeiro do Norte - CE</td>
                                     <td class="py-2 px-4">(88) 1357-2468</td>
                                     <td class="py-2 px-4">Seg a Sex: 11h às 22h</td>
                                 </tr>
@@ -67,26 +82,34 @@
                     </div>
                 </article>
 
-                <!-- Mapa -->
+                
                 <section>
                     <header class="mb-4">
-                        <h2 class="text-2xl font-semibold text-gray-100">Localização no Mapa</h2>
+                        <h3 class="text-2xl font-semibold text-gray-100">Localização no Mapa</h3>
                     </header>
                     <div class="h-full w-full bg-zinc-800 rounded-lg shadow-lg">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-pOGDx9URg_tU8dP46hru_VeRp-Fd-U&ehbc=2E312F" width="640" height="480"></iframe>
+                      
+                        <iframe 
+                            src="https://www.google.com/maps/d/u/0/embed?mid=1dSF_8WapuQ1T39S2vJD-yQZmLVukLBk&ehbc=2E312F"
+                            class="w-full h-full rounded-lg"
+                            frameborder="0"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </section>
             </div>
 
-            <!-- Ambiente -->
+            
             <section class="mt-12">
                 <header>
-                    <h2 class="text-2xl font-semibold text-gray-100">Ambiente Aconchegante</h2>
+                    <h3 class="text-2xl font-semibold text-gray-100">Ambiente Aconchegante</h3>
                 </header>
                 <figure class="bg-zinc-800 p-4 rounded-lg shadow-lg mt-4">
-                    <img src="https://turismoetc.com.br/wp-content/uploads/2015/04/pizza.jpg" alt="Imagem do ambiente aconchegante da Pizza Delícia" class="rounded-lg shadow-md w-full">
+                    <img src="https://turismoetc.com.br/wp-content/uploads/2015/04/pizza.jpg" alt="Ambiente acolhedor da Pizza Delícia" class="rounded-lg shadow-md w-full">
                     <figcaption class="text-gray-300 mt-2 text-center">
-                        Conheça o ambiente acolhedor de nossas lojas
+                        Conheça o ambiente acolhedor de nossas lojas.
                     </figcaption>
                 </figure>
             </section>
