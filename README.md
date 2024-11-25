@@ -60,7 +60,7 @@ Bem-vindo ao repositório do site da Pizzaria Delícia! Este projeto é um site 
 - Wesley Franklin:
 <br>
 
-- Carlos Reiker:
+- Carlos Reiker: Criação, estruturação HTML e estilização da página de localizador de lojas
 <br>
 
 - Pedro Henrique Maciel de Sousa: Criação, estilização e responsividade dá página CARDÁPIO.
