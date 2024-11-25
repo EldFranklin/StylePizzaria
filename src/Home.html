@@ -24,7 +24,7 @@
         <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-sm sm:text-xl"><a href="facaOseuPedido.html"
             target="_blank">Pedidos</a></li>
         <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-sm sm:text-xl"><a
-            href="LocalizadorDeLojas.html" target="_blank">Lojas</a></li>
+            href="LocalizadorDeLojas.html" target="_blank">Conheça nossos espaços</a></li>
       </ul>
     </nav>
   </header>
@@ -38,56 +38,63 @@
     <img class="size-3/4 object-cover" src="../midias/central.png" alt="imagem central">
   </section>
 
-  <main id="main" class="flex flex-col items-center">
+  <main id="main" class="flex flex-col items-center ">
     <h2 class="text-2xl font-bold text-orange-500">Nossas Pizzas Destaques!</h2>
     <p class="font-semibold pb-5">Check out our specials for today!</p>
-    <ul class="flex justify-center ">
-      <li class="flex flex-col items-center font-bold">
+    <section class="flex justify-center flex-wrap gap-5">
+      <!--Wesley: Refatorei os itens da home para aplicar o hover-->
+      <article class="flex flex-col items-center font-bold max-w-sm hover:bg-gray-700 transition duration-300 rounded-lg shadow-lg border-3 border-orange-500">
         <h3 class="text-xl pb-3 font-semibold text-orange-500">Frango com Catupiry</h3>
         <img class="size-36 object-cover rounded-lg" src="../midias/frango_catupiry.jpg" alt="Pizza Frango com Catupiry">
-        <p class="font-semibold w-56 text-center py-5">Deliciosa combinação de frango desfiado com o cremoso Catupiry,
-          perfeita para quem ama sabores suaves e irresistíveis!</p>
-        <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3  w-32 rounded-md font-semibold"
-          href="facaOseuPedido.html" target="_blank">Pedir agora</a>
-      </li>
-
-      <li class="flex flex-col items-center font-bold">
-        <h3 class="text-xl pb-3 font-semibold text-orange-500">Portuguesa</h3>
-        <img class="size-36 object-cover rounded-lg" src="../midias/Portuguesa.jpg" alt="Pizza Portuguesa">
-        <p class="font-semibold w-56 text-center pt-5 pb-11">Uma clássica escolha com presunto, ovos, cebola e pimentão,
-          trazendo sabores tradicionais e marcantes.</p>
-        <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3  w-32 rounded-md font-semibold"
-          href="facaOseuPedido.html" target="_blank">Pedir agora</a>
-      </li>
-
-      <li class="flex flex-col items-center font-bold">
-        <h3 class="text-xl pb-3 font-semibold text-orange-500">Marguerita</h3>
-        <img class="size-36 object-cover rounded-lg" src="../midias/marguerita.jpg" alt="Pizza Marguerita">
-        <p class="font-semibold w-56 text-center py-5">O sabor fresco do manjericão, tomate e queijo derretido em uma
-          combinação simples, mas deliciosa.</p>
-        <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3  w-32 rounded-md font-semibold"
-          href="facaOseuPedido.html" target="_blank">Pedir agora</a>
-      </li>
-
-      <li class="flex flex-col items-center font-bold">
-        <h3 class="text-xl pb-3 font-semibold text-orange-500">Quatro Queijos</h3>
-        <img class="size-36 object-cover rounded-lg" src="../midias/quatro_queijos.jpg" alt="Pizza Quatro Queijos">
-        <p class="font-semibold w-56 text-center pt-6 pb-16">Uma mistura de mussarela, gorgonzola, parmesão e provolone.
+        <p class="font-semibold w-56 text-center py-5">
+          Deliciosa combinação de frango desfiado com o cremoso Catupiry, perfeita para quem ama sabores suaves e irresistíveis!
         </p>
         <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3 w-32 rounded-md font-semibold"
-          href="facaOseuPedido.html" target="_blank">Pedir agora</a>
-      </li>
-
-      <li class="flex flex-col items-center font-bold">
+           href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+      </article>
+  
+      <article class="flex flex-col items-center font-bold max-w-sm hover:bg-gray-700 transition duration-300 rounded-lg">
+        <h3 class="text-xl pb-3 font-semibold text-orange-500">Portuguesa</h3>
+        <img class="size-36 object-cover rounded-lg" src="../midias/Portuguesa.jpg" alt="Pizza Portuguesa">
+        <p class="font-semibold w-56 text-center pt-5 pb-11">
+          Uma clássica escolha com presunto, ovos, cebola e pimentão, trazendo sabores tradicionais e marcantes.
+        </p>
+        <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3 w-32 rounded-md font-semibold"
+           href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+      </article>
+  
+      <article class="flex flex-col items-center font-bold max-w-sm hover:bg-gray-700 transition duration-300 rounded-lg">
+        <h3 class="text-xl pb-3 font-semibold text-orange-500">Marguerita</h3>
+        <img class="size-36 object-cover rounded-lg" src="../midias/marguerita.jpg" alt="Pizza Marguerita">
+        <p class="font-semibold w-56 text-center py-5">
+          O sabor fresco do manjericão, tomate e queijo derretido em uma combinação simples, mas deliciosa.
+        </p>
+        <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3 w-32 rounded-md font-semibold"
+           href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+      </article>
+  
+      <article class="flex flex-col items-center font-bold max-w-sm hover:bg-gray-700 transition duration-300 rounded-lg">
+        <h3 class="text-xl pb-3 font-semibold text-orange-500">Quatro Queijos</h3>
+        <img class="size-36 object-cover rounded-lg" src="../midias/quatro_queijos.jpg" alt="Pizza Quatro Queijos">
+        <p class="font-semibold w-56 text-center pt-6 pb-16">
+          Uma mistura de mussarela, gorgonzola, parmesão e provolone.
+        </p>
+        <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3 w-32 rounded-md font-semibold"
+           href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+      </article>
+  
+      <article class="flex flex-col items-center font-bold max-w-sm hover:bg-gray-700 transition duration-300 rounded-lg">
         <h3 class="text-xl pb-3 font-semibold text-orange-500">Chocolate com Morango</h3>
         <img class="size-36 object-cover rounded-lg" src="../midias/choco_morango.jpg" alt="Pizza Chocolate com Morango">
-        <p class="font-semibold w-56 text-center pt-8 pb-20">Chocolate derretido coberto com morangos frescos.</p>
+        <p class="font-semibold w-56 text-center pt-8 pb-20">
+          Chocolate derretido coberto com morangos frescos.
+        </p>
         <a class="flex justify-center bg-orange-700 hover:bg-orange-400 transition-all text-gray-200 p-3 w-32 rounded-md font-semibold"
-          href="facaOseuPedido.html" target="_blank">Pedir agora</a>
-      </li>
-    </ul>
-
+           href="facaOseuPedido.html" target="_blank">Pedir agora</a>
+      </article>
+    </section>
   </main>
+  
 
   <section class="flex flex-row items-center h-screen" id="sobre-nos">
     <img class="size-3/4 object-cover p-6 rounded-full" src="../midias/fachada.jpg"
