@@ -1,6 +1,6 @@
 # Pizzaria Delícia
 
-Bem-vindo ao repositório do site da Pizzaria Delícia! Este projeto é um site para uma pizzaria fictícia para o Curso TIC 20 da Capacita Brasil na trilha de aprendizado de FullStack e da Turma <strong>FSN3</strong>, o intuito desse site é finalizar o Modulo Básico da trilha utilizando as tecnologias e conceitos aprendidos nesse modulo as tecnologias aprendidas foram Html, Css, TailwindCss e Git.
+Bem-vindo ao repositório do site da Pizzaria Delícia! Este projeto é um site de uma pizzaria fictícia para o Curso TIC 20 do Capacita Brasil na trilha de aprendizado Full Stack e da Turma <strong>FSN3</strong>. O intuito desse site é finalizar o Módulo Básico da trilha utilizando as tecnologias e conceitos aprendidos nesse módulo. Tecnologias aprendidas: HTML, CSS, TailwindCSS e Git.
 
 ---
 ## Estrutura do Projeto
@@ -63,13 +63,13 @@ Bem-vindo ao repositório do site da Pizzaria Delícia! Este projeto é um site 
 - Carlos Reiker:
 <br>
 
-- Pedro Henrique Sousa:
-
+- Pedro Henrique Maciel de Sousa: Criação, estilização e responsividade dá página CARDÁPIO.
+<br>
 
 ---
 ## Autores
 
-Este projeto foi desenvolvido pelos membros da Equipe 3 composto por:
+Este projeto foi desenvolvido pelos membros da Equipe 3, composta por:
 
 <table>
   <tr>
