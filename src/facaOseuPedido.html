@@ -16,9 +16,9 @@
          <nav class="w-full flex items-center justify-between px-7">
             <h1 class="font-bold text-orange-500 text-3xl">Pizzaria Delícia</h1>
             <ul class="list-none flex gap-7">
-              <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl">
-               <a href="Home.html">Página Inicial</a>
-              </li>
+               <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl">
+                  <a href="Home.html">Página Inicial</a>
+               </li>
                <li class="font-bold text-orange-500 hover:text-orange-300 transition-all text-xl">
                   <a href="cardapio.html" target="_blank">Cardapio</a>
                </li>
@@ -37,76 +37,113 @@
                <h2 class="text-3xl font-bold text-center text-orange-500 mb-6 font-quicksand">Faça seu Pedido!</h2>
                <p class="text-center text-gray-300 mb-6">Preencha o formulário abaixo para realizar o seu pedido.</p>
             </header>
-            <form action="enviar_pedido.html" method="post" class="space-y-6">
-               <fieldset class="border border-gray-700 p-4 rounded-md">
-                  <legend class="text-lg font-semibold text-orange-400">Informações Pessoais</legend>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                     <div>
-                        <label for="nome" class="block text-sm">Nome:</label>
-                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
-                     </div>
-                     <div>
-                        <label for="email" class="block text-sm">E-mail:</label>
-                        <input type="email" id="email" name="email" required placeholder="Digite seu email" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
-                     </div>
-                     <div class="col-span-2">
-                        <label for="telefone" class="block text-sm">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" required class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
-                     </div>
-                  </div>
-               </fieldset>
-               <fieldset class="border border-gray-700 p-4 rounded-md">
-                  <legend class="text-lg font-semibold text-orange-400">Escolha sua Pizza</legend>
-                  <div class="mt-4 space-y-4">
-                     <div>
-                        <label for="pizza" class="block text-sm">Sabor:</label>
-                        <select id="pizza" name="pizza" required class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
-                           <option value="" disabled selected>Selecione uma pizza</option>
-                           <option value="marguerita">Marguerita</option>
-                           <option value="calabresa">Calabresa</option>
-                           <option value="portuguesa">Portuguesa</option>
-                           <option value="quatro_queijos">Quatro Queijos</option>
-                           <option value="frango_Catupiry">Frango/Catupiry</option>
-                           <option value="chocolate_com_morango">Chocolate com Morango</option>
-                        </select>
-                     </div>
-                     <div>
-                        <p class="text-sm">Adicionais Extras:</p>
-                        <div class="flex flex-wrap gap-2">
-                           <label><input type="checkbox" name="adicionais" value="molho_de_tomate" class="mr-2">Molho de Tomate</label>
-                           <label><input type="checkbox" name="adicionais" value="mussarela" class="mr-2">Mussarela</label>
-                           <label><input type="checkbox" name="adicionais" value="cebola" class="mr-2">Cebola</label>
-                           <label><input type="checkbox" name="adicionais" value="pimentao" class="mr-2">Pimentão</label>
+            <article>
+               <form action="enviar_pedido.html" method="post" class="space-y-6">
+                  <section class="border border-gray-700 p-4 rounded-md">
+                     <header>
+                        <h2 class="text-lg font-semibold text-orange-400">Informações Pessoais</h2>
+                     </header>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <div>
+                           <label for="nome" class="block text-sm">Nome:</label>
+                           <input type="text" id="nome" name="nome" required placeholder="Digite seu nome" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
+                        </div>
+                        <div>
+                           <label for="email" class="block text-sm">E-mail:</label>
+                           <input type="email" id="email" name="email" required placeholder="Digite seu email" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
+                        </div>
+                        <div class="col-span-2">
+                           <label for="telefone" class="block text-sm">Telefone:</label>
+                           <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" required class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
                         </div>
                      </div>
-                     <div>
-                        <p class="text-sm">Tamanho:</p>
-                        <div class="space-x-4">
-                           <label><input type="radio" name="tamanho" value="pequena" required class="mr-2">Pequena</label>
-                           <label><input type="radio" name="tamanho" value="media" class="mr-2">Média</label>
-                           <label><input type="radio" name="tamanho" value="grande" class="mr-2">Grande</label>
+                  </section>
+            
+                  <section class="border border-gray-700 p-4 rounded-md">
+                     <header>
+                        <h2 class="text-lg font-semibold text-orange-400">Endereço</h2>
+                     </header>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <div>
+                           <label for="rua" class="block text-sm">Rua:</label>
+                           <input type="text" id="rua" name="rua" required placeholder="Digite sua rua" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
+                        </div>
+                        <div>
+                           <label for="bairro" class="block text-sm">Bairro:</label>
+                           <input type="text" id="bairro" name="bairro" required placeholder="Digite seu bairro" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
+                        </div>
+                        <div>
+                           <label for="numero" class="block text-sm">Número:</label>
+                           <input type="text" id="numero" name="numero" required placeholder="Digite o número da residência" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
+                        </div>
+                        <div>
+                           <label for="complemento" class="block text-sm">Complemento:</label>
+                           <input type="text" id="complemento" name="complemento" placeholder="Ex.: Apto 101, Bloco B" class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
                         </div>
                      </div>
-                  </div>
-               </fieldset>
-               <fieldset class="border border-gray-700 p-4 rounded-md">
-                  <label for="observacoes" class="block text-sm">Observações:</label>
-                  <textarea id="observacoes" name="observacoes" rows="4" placeholder="Escreva suas observações..." class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white"></textarea>
-               </fieldset>
-               <fieldset class="border border-gray-700 p-4 rounded-md">
-                  <label for="pagamento" class="block text-sm">Método de Pagamento:</label>
-                  <select id="pagamento" name="pagamento" required class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
-                     <option value="" disabled selected>Escolha o método de pagamento</option>
-                     <option value="dinheiro">Dinheiro</option>
-                     <option value="cartao_credito">Cartão de Crédito</option>
-                     <option value="cartao_debito">Cartão de Débito</option>
-                     <option value="pix">PIX</option>
-                  </select>
-               </fieldset>
-               <button type="submit" class="w-full p-3 bg-orange-500 text-gray-900 font-bold rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 hover:text-white transition-all">
-               Enviar Pedido
-               </button>
-            </form>
+                  </section>
+            
+                  <section class="border border-gray-700 p-4 rounded-md">
+                     <header>
+                        <h2 class="text-lg font-semibold text-orange-400">Escolha sua Pizza</h2>
+                     </header>
+                     <div class="mt-4 space-y-4">
+                        <div>
+                           <label for="pizza" class="block text-sm">Sabor:</label>
+                           <select id="pizza" name="pizza" required class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
+                              <option value="" disabled selected>Selecione uma pizza</option>
+                              <option value="marguerita">Marguerita</option>
+                              <option value="calabresa">Calabresa</option>
+                              <option value="portuguesa">Portuguesa</option>
+                              <option value="quatro_queijos">Quatro Queijos</option>
+                              <option value="frango_Catupiry">Frango/Catupiry</option>
+                              <option value="chocolate_com_morango">Chocolate com Morango</option>
+                           </select>
+                        </div>
+                        <div>
+                           <p class="text-sm">Adicionais Extras:</p>
+                           <div class="flex flex-wrap gap-2">
+                              <label><input type="checkbox" name="adicionais" value="molho_de_tomate" class="mr-2">Molho de Tomate</label>
+                              <label><input type="checkbox" name="adicionais" value="mussarela" class="mr-2">Mussarela</label>
+                              <label><input type="checkbox" name="adicionais" value="cebola" class="mr-2">Cebola</label>
+                              <label><input type="checkbox" name="adicionais" value="pimentao" class="mr-2">Pimentão</label>
+                           </div>
+                        </div>
+                        <div>
+                           <p class="text-sm">Tamanho:</p>
+                           <div class="space-x-4">
+                              <label><input type="radio" name="tamanho" value="pequena" required class="mr-2">Pequena</label>
+                              <label><input type="radio" name="tamanho" value="media" class="mr-2">Média</label>
+                              <label><input type="radio" name="tamanho" value="grande" class="mr-2">Grande</label>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+            
+                  <aside class="border border-gray-700 p-4 rounded-md">
+                     <label for="observacoes" class="block text-sm">Observações:</label>
+                     <textarea id="observacoes" name="observacoes" rows="4" placeholder="Escreva suas observações..." class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white"></textarea>
+                  </aside>
+            
+                  <section class="border border-gray-700 p-4 rounded-md">
+                     <header>
+                        <h2 class="text-lg font-semibold text-orange-400">Pagamento</h2>
+                     </header>
+                     <label for="pagamento" class="block text-sm">Método de Pagamento:</label>
+                     <select id="pagamento" name="pagamento" required class="w-full p-2 rounded-md bg-zinc-900 border border-gray-700 text-white">
+                        <option value="" disabled selected>Escolha o método de pagamento</option>
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="cartao_credito">Cartão de Crédito</option>
+                        <option value="cartao_debito">Cartão de Débito</option>
+                        <option value="pix">Pix</option>
+                     </select>
+                  </section>
+            
+                  <footer>
+                     <button type="submit" class="w-full bg-orange-500 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded-md shadow-lg transition-all">Finalizar Pedido</button>
+                  </footer>
+               </form>
+            </article>
          </section>
       </main>
    </body>
